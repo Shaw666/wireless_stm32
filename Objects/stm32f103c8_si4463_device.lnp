@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\drv_delay.o"
+".\objects\drv_led.o"
+".\objects\drv_spi.o"
+".\objects\drv_uart.o"
+".\objects\key.o"
+".\objects\data_process.o"
+".\objects\drv_button.o"
+".\objects\drv_si4463.o"
+".\objects\stm32_flash.o"
+".\objects\misc.o"
+".\objects\stm32f10x_dbgmcu.o"
+".\objects\stm32f10x_exti.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_sdio.o"
+".\objects\stm32f10x_spi.o"
+".\objects\stm32f10x_tim.o"
+".\objects\stm32f10x_usart.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_flash.o"
+".\objects\core_cm3.o"
+".\objects\startup_stm32f10x_md.o"
+--strict --scatter ".\Objects\stm32f103c8_si4463_device.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\stm32f103c8_si4463_device.map" -o .\Objects\stm32f103c8_si4463_device.axf
